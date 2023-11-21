@@ -39,3 +39,8 @@ git checkout completed
 ## Questions & feedback
 
 If you have any questions while working through the course, or would like to share any feedback, please do so in my [**Discord server**](https://discord.gg/z29WbnfDC5).
+
+## command
+
+msw init command
+- `npx msw init ./public`

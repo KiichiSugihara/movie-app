@@ -1,4 +1,4 @@
-import { http } from 'msw'
+import { http, HttpResponse } from 'msw'
 
 const movies = [
   {
@@ -49,8 +49,6 @@ const movies = [
 
 export const handlers = [
 	http.get('https://api.example.com/movies/featured', () => {
-    return new Response(
-			JSON.stringify(movies)
-		)
-	})
+    return HttpResponse.json((movies))
+	}),
 ];
